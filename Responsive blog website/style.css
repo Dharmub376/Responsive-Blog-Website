@@ -1,0 +1,101 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 90px; /* Adjust the height of the logo as needed */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #ff4000; /* Change the color on hover as needed */
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.blog-post {
+    background-color: #fff;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.blog-post h2 {
+    color: #333;
+}
+
+.blog-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.mark-as-read {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.mark-as-read:hover {
+    background-color: #217dbb;
+}
+
+.mark-as-read.read {
+    background-color: #e74c3c;
+}
+
+@media (max-width: 600px) {
+    .blog-post {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+}
